@@ -27,7 +27,7 @@ def __get_jira_user_token():
         conditionally_print("Your user token is:" + user_token)
         return user_token
     
-JIRA_USER_TOKEN = __get_jira_user_token()
+__JIRA_USER_TOKEN = __get_jira_user_token()
 
 
 def __get_jira_source_url_custom_field_id():
@@ -47,4 +47,4 @@ def __get_jira_data_initiative_type_field_id():
 
 JIRA_DATA_INITIATIVE_TYPE_FIELD_ID = __get_jira_data_initiative_type_field_id()
 
-JIRA_AUTH = HTTPBasicAuth(JIRA_USERNAME, JIRA_USER_TOKEN)
+JIRA_AUTH = HTTPBasicAuth(JIRA_USERNAME, __JIRA_USER_TOKEN)
