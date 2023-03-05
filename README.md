@@ -4,6 +4,8 @@
 
 2. you have to grab your jira user token from jira interface and set it it ./config/jira_user_token
 
+    2.1 https://id.atlassian.com/manage-profile/security/api-tokens
+
 4. you have to ask your TL for jira URL and set it within ./config/jira_url
 
 5. you should not set debug_level above '1' while you're not properly debugging the app
